@@ -8,32 +8,35 @@
   
   <title>Frontend Mentor | Interactive pricing component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Scripts -->
+  <script src="scripts.js" defer></script>
 </head>
 <body>
-
-  Simple, traffic-based pricing
-  Sign-up for our 30-day trial. No credit card required. 
-
-  Pageviews
-  $ /month
-
-  Monthly Billing
-  Yearly Billing 25% discount
-
-  Unlimited websites
-  100% data ownership
-  Email reports
-
-  Start my trial
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <section class="hero-container">
+    <h3 class="herro-title">Simple, traffic-based pricing</h3>
+    <p class="hero-para">Sign-up for our 30-day trial. No credit card required.</p> 
+  </section>
+  <main>
+    <div class="page-views-container"><span class="num-of-pages">0</span> Pageviews</div>
+    <div class="slider-container">
+      <input type="range" id="slider" name="slider" min="0" max="4" step="1">
+    </div>
+    <div class="price-container">$<span class="price">0</span> /month</div>
+    <div class="billing-container">
+      <div>
+        <span class="monthly">Monthly Billing</span><button class="billing-button"></button><span class="yearly">Yearly Billing</span>
+      </div>
+      <span class="discount">-25%</span>
+    </div>
+  </main>
+  <div class="benefits-container">
+    <img src="/images/icon-check.svg" alt="icon-check"> Unlimited websites
+    <img src="/images/icon-check.svg" alt="icon-check"> 100% data ownership
+    <img src="/images/icon-check.svg" alt="icon-check"> Email reports
   </div>
+  <button class="trial-button">Start my trial</button>
 </body>
 </html>
