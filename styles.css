@@ -1,0 +1,120 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+
+/* Variables */
+:root {
+  /* Primary */
+  --soft-cyan: hsl(174, 77%, 80%);
+  --strong-cyan: hsl(174, 86%, 45%);
+  --light-grayish-red: hsl(15, 100%, 70%);
+  --pale-blue: hsl(226, 100%, 87%);
+  /* Neutral */
+  --white: hsl(0, 0%, 100%);
+  --very-pale-blue: hsl(230, 100%, 99%);
+  --light-grayish-blue: hsl(224, 65%, 95%);
+  --med-grayish-blue: hsl(223, 50%, 87%);
+  --grayish-blue: hsl(225, 20%, 60%);
+  --dark-desaturated-blue: hsl(227, 35%, 25%);
+  /* Typography */
+  --size: 15px;
+  --family: 'Manrope', sans-serif;
+}
+
+/* Global Styles */
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--very-pale-blue);
+  background-image: url("/images/bg-pattern.svg");
+  background-repeat: no-repeat;
+  font-family: var(--family);
+  font-size: var(--size);
+}
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.hero-container p,
+.page-views-container,
+.price-container,
+.monthly,
+.yearly,
+.benefits-container {
+  color: var(--grayish-blue);
+}
+/* img {
+  width: 100%;
+  height: auto;
+} */
+
+/* Hero Section */
+.hero-container {
+  background-image: url("/images/pattern-circles.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 3rem 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.hero-container h3 {
+  font-size: 22px;
+  margin-bottom: 1rem;
+  padding: 0 1rem;
+}
+.hero-container p {
+  line-height: 1.5;
+  margin: 0;
+  width: 55%;
+}
+
+/* Subscription Section*/
+.subscription-container {
+  background-color: var(--white);
+  border-radius: 10px;
+  margin: 2rem 1.5rem;
+  padding: 2rem 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+/* Pageviews */
+.page-views-container {
+  font-size: 14px;
+  font-weight: 800;
+  padding-bottom: 2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+/* Slider */
+.slider-container {
+  padding: 0 1.5rem 2rem;
+}
+input {
+  width: 100%;
+}
+/* Price */
+.price-container {
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: .5rem;
+}
+.price {
+  color: var(--dark-desaturated-blue);
+  font-size: 3rem;
+}
+/* Billing */

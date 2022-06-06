@@ -15,28 +15,28 @@
   <script src="scripts.js" defer></script>
 </head>
 <body>
-  <section class="hero-container">
-    <h3 class="herro-title">Simple, traffic-based pricing</h3>
-    <p class="hero-para">Sign-up for our 30-day trial. No credit card required.</p> 
-  </section>
   <main>
-    <div class="page-views-container"><span class="num-of-pages">0</span> Pageviews</div>
-    <div class="slider-container">
-      <input type="range" id="slider" name="slider" min="0" max="4" step="1">
-    </div>
-    <div class="price-container">$<span class="price">0</span> /month</div>
-    <div class="billing-container">
-      <div>
-        <span class="monthly">Monthly Billing</span><button class="billing-button"></button><span class="yearly">Yearly Billing</span>
+    <section class="hero-container">
+      <h3 class="herro-title">Simple, traffic-based pricing</h3>
+      <p class="hero-para">Sign-up for our 30-day trial. No credit card required.</p> 
+    </section>
+    <section class="subscription-container">
+      <div class="page-views-container"><span class="num-of-pages">0</span> Pageviews</div>
+      <div class="slider-container">
+        <input type="range" id="slider" name="slider" min="0" max="4" step="1">
       </div>
-      <span class="discount">-25%</span>
-    </div>
+      <div class="price-container"><span class="price">$0</span><span> / month</span></div>
+      <div class="billing-container">
+        <span class="monthly">Monthly Billing</span><button class="billing-button"></button><span class="yearly">Yearly Billing<span class="discount">-25%</span></span>
+      </div>
+      <hr>
+      <div class="benefits-container">
+        <img src="/images/icon-check.svg" alt="icon-check"> Unlimited websites
+        <img src="/images/icon-check.svg" alt="icon-check"> 100% data ownership
+        <img src="/images/icon-check.svg" alt="icon-check"> Email reports
+      </div>
+      <button class="trial-button">Start my trial</button>
+    </section>
   </main>
-  <div class="benefits-container">
-    <img src="/images/icon-check.svg" alt="icon-check"> Unlimited websites
-    <img src="/images/icon-check.svg" alt="icon-check"> 100% data ownership
-    <img src="/images/icon-check.svg" alt="icon-check"> Email reports
-  </div>
-  <button class="trial-button">Start my trial</button>
 </body>
 </html>
